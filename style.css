@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;700&family=Oleo+Script:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-top: 50px;
+}
+
+.container{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    width: 600px;
+    height: 600px;
+    background: green;
+    border-radius: 17px;
+}
+
+#task-input{
+    /* display: flex; */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 7px;
+    /* align-items: center; */
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;  /*texto placeholder no centro*/
+}
+
+button{
+    padding: 7px;
+    font-weight: 700;
+    transition: 0.3s;
+    transition-property: background;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  } */
+
+#tasks{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    /* align-items: flex-start; */
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
